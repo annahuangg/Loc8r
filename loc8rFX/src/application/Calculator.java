@@ -6,8 +6,6 @@ import java.util.TreeMap;
 
 public class Calculator {
 	// Calculate distance (KM) between two latitude-longitude points (Haversine formula)
-	// https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
-
 
 	public final static double AVERAGE_RADIUS_OF_EARTH_KM = 6371;
 	public final static double KM_TO_MILE = 0.621371;
@@ -29,11 +27,6 @@ public class Calculator {
 
 	/**
 	 * Returns the distance between two sets of latitudes and longitudes in meters.
-	 * <p/>
-	 * Based from the following JavaScript SO answer:
-	 * http://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula,
-	 * which is based on https://en.wikipedia.org/wiki/Haversine_formula (error
-	 * rate: ~0.55%).
 	 */
 
 	public double getDistanceBetween(double lat1, double lon1, double lat2, double lon2) {
